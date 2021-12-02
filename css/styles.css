@@ -36,6 +36,11 @@ h2 {
   font-family: 'Open Sans', sans-serif;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   line-height: auto;
@@ -201,5 +206,46 @@ h2 {
   }
   .soy-misa img {
     width: 21.1rem;
+  }
+}
+
+/* Servicios */
+
+.servicios {
+  margin-top: 7rem;
+}
+
+.servicios h2 {
+  margin-top: 0;
+  margin-bottom: 5.5rem;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8.8rem;
+}
+
+.servicio h3 {
+  margin: 2rem 0 0 0;
+}
+
+.servicio p {
+  width: 26.2rem;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .servicios {
+    margin-top: 5.8rem;
+  }
+  .servicios h2 {
+    margin-bottom: 7.5rem;
+  }
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 19rem;
   }
 }
