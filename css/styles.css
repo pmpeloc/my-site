@@ -315,3 +315,45 @@ h2 {
     max-width: 37.6rem;
   }
 }
+
+/* Footer */
+
+.site-footer {
+  background-color: #dbdbdb;
+  padding: 5.8rem 0 11.3rem 0;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+  margin-bottom: 8.5rem;
+}
+
+.red-social-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.red-social-flex:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    padding-block: 9.5rem;
+    background-image: url(../images/puntitos.png);
+    background-color: rgba(141, 138, 138, 0.2);
+  }
+  .site-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-footer {
+    margin-bottom: 0;
+  }
+}
