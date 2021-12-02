@@ -165,8 +165,13 @@ h2 {
   text-align: center;
 }
 
+.texto-desktop {
+  display: none;
+}
+
 .soy-misa p {
   margin-bottom: 6rem;
+  max-width: 31rem;
 }
 
 .soy-misa img {
@@ -174,6 +179,9 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .soy-misa {
+    padding-block: 14.5rem;
+  }
   .soy-misa-flex {
     flex-direction: row-reverse;
     gap: 6rem;
@@ -181,8 +189,15 @@ h2 {
   .soy-misa h2 {
     text-align: left;
   }
+  .texto-mobile {
+    display: none;
+  }
+  .texto-desktop {
+    display: unset;
+  }
   .soy-misa p {
     margin-bottom: 0;
+    font-size: 2.4rem;
   }
   .soy-misa img {
     width: 21.1rem;
