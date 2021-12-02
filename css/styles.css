@@ -31,6 +31,34 @@ a {
   margin: 0 auto;
 }
 
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+/* Utilidades */
+
+.text-center {
+  text-align: center !important;
+}
+
+/* Fondo Principal */
+
+.fondo-principal {
+  height: 100%;
+  background-image: url(../images/puntitos-cel.png);
+}
+
+@media (min-width: 768px) {
+  .fondo-principal {
+    background-image: url(../images/puntitos.png);
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
+
 /* Header */
 
 .header-flex {
@@ -66,5 +94,39 @@ a {
   }
   .header-flex .logo {
     width: 6rem;
+  }
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.hero h1 {
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 5.2rem;
+}
+
+.hero img {
+  width: 34.4rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+  .hero h1 {
+    text-align: left;
+    margin-top: -16rem;
+  }
+  .hero img {
+    width: 50.3rem;
   }
 }
